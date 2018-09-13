@@ -18,7 +18,7 @@ function insight_stylesheets(){
   wp_enqueue_script( 'insight-fontawesomsvg', INSIGHT_JS_URL . '/all.min.js' );
 
 	// insight main stylesheet
-  wp_enqueue_style( 'insight_main', INSIGHT_PARENT_URL . '/style.css', null, '2.0.2' );
+  wp_enqueue_style( 'insight_main', INSIGHT_PARENT_URL . '/style.css', null, '2.0.3' );
 
 }
 

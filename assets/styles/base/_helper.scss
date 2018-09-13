@@ -281,7 +281,8 @@
 			&:active, &:focus {
 				@extend .global-transition;
 
-				border-color: #00aeef;
+				box-shadow: 0 0 3px 0 #b9b9b9;
+				background: transparent;
 				outline: none;
 			}
 		}
