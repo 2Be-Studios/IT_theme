@@ -292,22 +292,30 @@
 		}
 	}
 
-	textarea {
-		color: #00aeef;
+	textarea,
+	select {
 		border-top: none;
 		border-left: none;
 		border-right: none;
-		font-size: 14px;
 		padding: 10px;
+		font-size: 14px;
+		color: #00aeef;
 		font-family: "AvertaRegular";
-		background-color: transparent;
-		border-bottom: 1px solid $color-red;
+		border: 0;
+		border-radius: 3px;
+		color: #060606;
+		box-shadow: 0 0 3px 0 #dcdcdc;
 
 		&:active, &:focus {
 			@extend .global-transition;
 
-			border-color: #00aeef;
+			box-shadow: 0 0 3px 0 #b9b9b9;
 			outline: none;
+			transform: scale(1.01);
+		}
+
+		&:hover {
+			box-shadow: 0 0 3px 0 #b9b9b9;
 		}
 	}
 
