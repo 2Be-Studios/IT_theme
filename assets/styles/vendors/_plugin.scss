@@ -189,7 +189,7 @@ plugins **/
 
 .list-checkbox-wrap li,
 .list-radio-wrap li label {
-	margin-left: 0;
+	margin-left: 0 !important;
 }
 
 .list-checkbox-wrap li input[type="checkbox"] {
