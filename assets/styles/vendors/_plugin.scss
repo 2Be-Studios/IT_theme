@@ -159,114 +159,114 @@ plugins **/
 			}
 		}
 
-	}
-}
 
-.nf-next {
-	padding: 11px 25px;
-	border: 1px solid #e30040;
-	color: #e30040;
-	background: transparent;
-}
+		.nf-next {
+			padding: 11px 25px;
+			border: 1px solid #e30040;
+			color: #e30040;
+			background: transparent;
+		}
 
-.nf-previous {
-	padding: 11px 25px;
-	border: 1px solid $color-gray;
-	color: $color-gray;
-	background: transparent;
-}
+		.nf-previous {
+			padding: 11px 25px;
+			border: 1px solid $color-gray;
+			color: $color-gray;
+			background: transparent;
+		}
 
-.form_submit_wrapper {
-	float: right;
-	input {
-		color: #e30040;
-		text-transform: uppercase;
-		padding: 11px 65px;
-		border: 1px solid #e30040;
-		background-color: transparent;
-	}
-}
+		.form_submit_wrapper {
+			float: right;
+			input {
+				color: #e30040;
+				text-transform: uppercase;
+				padding: 11px 65px;
+				border: 1px solid #e30040;
+				background-color: transparent;
+			}
+		}
 
-.list-checkbox-wrap li,
-.list-radio-wrap li label {
-	margin-left: 0 !important;
-}
+		.list-checkbox-wrap li,
+		.list-radio-wrap li label {
+			margin-left: 0 !important;
+		}
 
-.list-checkbox-wrap li input[type="checkbox"] {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-}
+		.list-checkbox-wrap li input[type="checkbox"] {
+			border: 0;
+			clip: rect(0 0 0 0);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			width: 1px;
+		}
 
-.list-radio-wrap li input[type="radio"] {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-	&:focus ~ label:before, &:checked ~ label:before {
-		content: "\f192";
-	}
-}
+		.list-radio-wrap li input[type="radio"] {
+			border: 0;
+			clip: rect(0 0 0 0);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			width: 1px;
+			&:focus ~ label:before, &:checked ~ label:before {
+				content: "\f192";
+			}
+		}
 
-.list-checkbox-wrap li input[type="checkbox"]:checked ~ label:before {
-	content: "\f046";
-}
+		.list-checkbox-wrap li input[type="checkbox"]:checked ~ label:before {
+			content: "\f046";
+		}
 
-.list-radio-wrap li input[type="radio"] {
-	&:focus ~ label, &:checked ~ label {
-		color: #e30040;
-	}
-}
+		.list-radio-wrap li input[type="radio"] {
+			&:focus ~ label, &:checked ~ label {
+				color: #e30040;
+			}
+		}
 
-.list-checkbox-wrap li input[type="checkbox"]:checked ~ label {
-	color: #e30040;
-}
+		.list-checkbox-wrap li input[type="checkbox"]:checked ~ label {
+			color: #e30040;
+		}
 
-.form-in-red {
-	.list-checkbox-wrap label, .list-radio-wrap label {
-		color: #000;
-	}
-	.list-checkbox-wrap li label, .list-radio-wrap li label {
-		margin-left: 0;
-		font-size: 16px;
-		color: #000;
-	}
-}
+		.form-in-red {
+			.list-checkbox-wrap label, .list-radio-wrap label {
+				color: #000;
+			}
+			.list-checkbox-wrap li label, .list-radio-wrap li label {
+				margin-left: 0;
+				font-size: 16px;
+				color: #000;
+			}
+		}
 
-.list-radio-wrap li label:before {
-	content: "\f1db";
-}
+		.list-radio-wrap li label:before {
+			content: "\f1db";
+		}
 
-.list-checkbox-wrap li label:before {
-	content: "\f096";
-	font-family: FontAwesome;
-	display: inline-block;
-	margin-right: 9px;
-}
+		.list-checkbox-wrap li label:before {
+			content: "\f096";
+			font-family: FontAwesome;
+			display: inline-block;
+			margin-right: 9px;
+		}
 
-.list-radio-wrap li label:before {
-	font-family: FontAwesome;
-	display: inline-block;
-	margin-right: 9px;
-}
+		.list-radio-wrap li label:before {
+			font-family: FontAwesome;
+			display: inline-block;
+			margin-right: 9px;
+		}
 
-.pure-label {
-	border: 0 !important;
-	padding: 0 !important;
-	&::placeholder {
-		color: #000 !important;
-	}
-}
+		.pure-label {
+			border: 0 !important;
+			padding: 0 !important;
+			background-color: transparent;
 
-.nf-mp-header h3 {
-	font-size: 19px;
-}
+			&::placeholder {
+				color: #000 !important;
+			}
+		}
+
+		.nf-mp-header h3 {
+			font-size: 19px;
+		}
