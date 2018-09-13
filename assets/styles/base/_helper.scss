@@ -234,16 +234,20 @@
 .form-in-red {
 
 	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-		color: $color-darker;
+		color: $color-gray;
+		font-style: italic;
 	}
 	::-moz-placeholder { /* Firefox 19+ */
-		color: $color-darker;
+		color: $color-gray;
+		font-style: italic;
 	}
 	:-ms-input-placeholder { /* IE 10+ */
-		color: $color-darker;
+		color: $color-gray;
+		font-style: italic;
 	}
 	:-moz-placeholder { /* Firefox 18- */
-		color: $color-darker;
+		color: $color-gray;
+		font-style: italic;
 	}
 
 	.nf-error {
