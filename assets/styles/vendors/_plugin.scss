@@ -260,7 +260,9 @@ plugins **/
 		.pure-label {
 			border: 0 !important;
 			padding: 0 !important;
-			background-color: transparent;
+			pointer-events: none;
+			background: transparent;
+			box-shadow: none !important;
 
 			&::placeholder {
 				color: #000 !important;
