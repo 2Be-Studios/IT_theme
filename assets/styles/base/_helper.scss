@@ -275,15 +275,19 @@
 			font-family: "AvertaRegular";
 			border: 0;
 			border-radius: 3px;
-			background: #ececec;
 			color: #060606;
+			box-shadow: 0 0 3px 0 #dcdcdc;
 
 			&:active, &:focus {
 				@extend .global-transition;
 
 				box-shadow: 0 0 3px 0 #b9b9b9;
-				background: transparent;
 				outline: none;
+				transform: scale(1.01);
+			}
+
+			&:hover {
+				box-shadow: 0 0 3px 0 #b9b9b9;
 			}
 		}
 	}
