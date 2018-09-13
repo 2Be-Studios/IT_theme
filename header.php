@@ -12,7 +12,6 @@
   gtag('js', new Date());
   gtag('config', 'UA-112683242-1');
 </script>
-<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 </head>
 <body <?php body_class();?>>
 	<header class="home-nav__wrapper">

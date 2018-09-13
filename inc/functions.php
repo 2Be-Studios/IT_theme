@@ -9,8 +9,8 @@ add_action( 'wp_enqueue_scripts' , 'insight_stylesheets' );
 function insight_stylesheets(){
 
   // font
-  wp_enqueue_style('insight_font', 'https://fonts.googleapis.com/css?family=Playfair+Display:700');
-
+  // wp_enqueue_style('insight_font', 'https://fonts.googleapis.com/css?family=Playfair+Display:700');
+  wp_enqueue_style('insight_font', 'https://fonts.googleapis.com/css?family=Orbitron');
   // aos animation library css
   wp_enqueue_style( 'insight_aos', 'https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css' );
 
@@ -19,7 +19,7 @@ function insight_stylesheets(){
 
 	// insight main stylesheet
   wp_enqueue_style( 'insight_main', INSIGHT_PARENT_URL . '/style.css', null, '1.1.5' );
-  
+
 }
 
 add_action( 'wp_head' , 'insight_extra_head_configs');
@@ -36,9 +36,9 @@ function insight_extra_head_configs(){
 
 function disable_emojicons_tinymce( $plugins ) {
   if ( is_array( $plugins ) ) {
-    return array_diff( $plugins, array( 'wpemoji' ) );
+	return array_diff( $plugins, array( 'wpemoji' ) );
   } else {
-    return array();
+	return array();
   }
 }
 
@@ -62,84 +62,84 @@ function disable_wp_emojicons() {
   */
 function reg_post_types(){
 
-    /* TESTIMONIALS*/
-    register_post_type( 'testi',
-      array(
-        'labels' => array(
-            'name' => __( 'Testimonials' ),
-            'singular_name' => __( 'Testimonial' )
-          ),
-          'public' => true,
-          'has_archive' => true,
-          'menu_icon' => 'dashicons-testimonial',
-          'supports' => array('title', 'editor', 'thumbnail')
-      )
-    );
+	/* TESTIMONIALS*/
+	register_post_type( 'testi',
+	  array(
+		'labels' => array(
+			'name' => __( 'Testimonials' ),
+			'singular_name' => __( 'Testimonial' )
+		  ),
+		  'public' => true,
+		  'has_archive' => true,
+		  'menu_icon' => 'dashicons-testimonial',
+		  'supports' => array('title', 'editor', 'thumbnail')
+	  )
+	);
 
-    /* partners*/
-    register_post_type( 'partners',
-      array(
-        'labels' => array(
-            'name' => __( 'Partners' ),
-            'singular_name' => __( 'Partner' )
-          ),
-          'public' => true,
-          'has_archive' => true,
-          'menu_icon' => 'dashicons-groups',
-          'supports' => array('title', 'editor', 'thumbnail')
-      )
-    );
+	/* partners*/
+	register_post_type( 'partners',
+	  array(
+		'labels' => array(
+			'name' => __( 'Partners' ),
+			'singular_name' => __( 'Partner' )
+		  ),
+		  'public' => true,
+		  'has_archive' => true,
+		  'menu_icon' => 'dashicons-groups',
+		  'supports' => array('title', 'editor', 'thumbnail')
+	  )
+	);
 
-    /* services*/
-    register_post_type( 'services',
-      array(
-        'labels' => array(
-            'name' => __( 'Services' ),
-            'singular_name' => __( 'Service' )
-          ),
-          'public' => true,
-          'has_archive' => true,
-          'menu_icon' => 'dashicons-screenoptions',
-          'supports' => array('title', 'editor', 'thumbnail')
-      )
-    );
+	/* services*/
+	register_post_type( 'services',
+	  array(
+		'labels' => array(
+			'name' => __( 'Services' ),
+			'singular_name' => __( 'Service' )
+		  ),
+		  'public' => true,
+		  'has_archive' => true,
+		  'menu_icon' => 'dashicons-screenoptions',
+		  'supports' => array('title', 'editor', 'thumbnail')
+	  )
+	);
 
-    /* TEAM */
-    register_post_type( 'team',
-      array(
-        'labels' => array(
-            'name' => __( 'Team' ),
-            'singular_name' => __( 'Team' )
-          ),
-          'public' => true,
-          'has_archive' => true,
-          'menu_icon' => 'dashicons-admin-users',
-          'supports' => array('title', 'editor', 'thumbnail')
-      )
-    );
+	/* TEAM */
+	register_post_type( 'team',
+	  array(
+		'labels' => array(
+			'name' => __( 'Team' ),
+			'singular_name' => __( 'Team' )
+		  ),
+		  'public' => true,
+		  'has_archive' => true,
+		  'menu_icon' => 'dashicons-admin-users',
+		  'supports' => array('title', 'editor', 'thumbnail')
+	  )
+	);
 
-     /* hero slider */
-    register_post_type( 'heroslider',
-      array(
-        'labels' => array(
-            'name' => __( 'Hero Slider' ),
-            'singular_name' => __( 'Slider' )
-          ),
-          'public' => true,
-          'has_archive' => true,
-          'menu_icon' => 'dashicons-format-gallery',
-          'supports' => array('title', 'thumbnail')
-      )
-    );
-   
+	 /* hero slider */
+	register_post_type( 'heroslider',
+	  array(
+		'labels' => array(
+			'name' => __( 'Hero Slider' ),
+			'singular_name' => __( 'Slider' )
+		  ),
+		  'public' => true,
+		  'has_archive' => true,
+		  'menu_icon' => 'dashicons-format-gallery',
+		  'supports' => array('title', 'thumbnail')
+	  )
+	);
+
 }
 
-add_action('init', 'reg_post_types'); 
+add_action('init', 'reg_post_types');
 
 // register api key
 
 function my_acf_init() {
-  
+
   acf_update_setting('google_api_key', 'AIzaSyC5zXrI6V-5QPt5MOjtC1vqMXIugDTZpYU');
 }
 
