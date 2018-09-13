@@ -1,0 +1,101 @@
+@media (min-width: 1400px) {
+	header {
+		.logo {
+			width: 70%;
+    		margin: 2px 0 0;
+		}
+	}
+
+	.container {
+		width: 70%;
+	}
+
+	// home
+	.home {
+		&-hero {
+			heigth: 870px;
+			&__content {
+				width: 80%;
+				blockquote {
+					margin: 0;
+				}
+
+				.action-btns {
+					margin: 50px 0 0 0px;
+				}
+			}
+			&__phone {
+				right: -330px;
+			}
+		}
+		&-testimonials {
+			background-position: bottom left;
+
+			&__col8wrapper {
+				padding: 65% 15% 6% 19%;
+			}
+
+			.section-heading {
+				
+
+				p {
+					margin: 0 15% 0 0;
+				}
+			}
+		}
+
+		.home-testimonials {
+			.section-heading {
+				margin: 0;
+
+				h2 {
+					margin: 115% 30% 0 0;
+				}
+			}
+			.home-testimonials__col8wrapper {
+				padding: 65% 15% 25% 19%;
+			}
+		}
+	}
+
+	// service
+	.service {
+		&-page-header {
+			background-size: 25%;
+			background-position: 100% 55%;
+		}
+
+		&-benefits {
+			.col-md-2 {
+				width: 16.66%;
+			}
+		}
+	}
+
+	.about {
+		&-testimonials {
+			margin-top: -50px;
+
+			.section-heading {
+				h2 {
+					margin: 60% 30% 0 0;
+				}
+
+				p {
+					margin: 0 30% 0 0;
+				}
+			}
+		}
+	}
+
+	// plugins
+	.slick {
+		&-slide {
+			img {
+				width: 100%;
+    			height: auto;
+			}
+		}
+	}
+
+}

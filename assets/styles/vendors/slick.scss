@@ -1,0 +1,126 @@
+/* Slider */
+
+.slick {
+    &-slider {
+        position: relative;
+
+        display: block;
+        box-sizing: border-box;
+
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+
+        -webkit-touch-callout: none;
+        -khtml-user-select: none;
+        -ms-touch-action: pan-y;
+            touch-action: pan-y;
+        -webkit-tap-highlight-color: transparent;
+
+    }
+
+    &-list {
+        position: relative;
+
+        display: block;
+        overflow: hidden;
+
+        margin: 0;
+        padding: 0;
+
+        &.dragging {
+            cursor: pointer;
+            cursor: hand;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &-track {
+        height: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        &:before,
+        &:after {
+            display: table;
+            content: '';
+        }
+
+        &:after {
+            clear: both;
+        }
+    } // slick track
+    
+    &-slide {
+         display: none;
+        float: left;
+        height: 100%;
+        min-height: 1px;
+
+        img {
+            display: block;
+        }
+        &.slick-loading {
+            img {
+                display: none;
+            }
+        }
+        &.dragging {
+            img {
+                pointer-events: none;
+            }
+        }
+    } // slick slide
+    &-loading {
+        .slick-slide {
+            visibility: hidden;
+        }
+    }
+    &-initialized {
+        .slick-slide {
+            display: block;
+        }
+    }
+
+    &-vertical {
+        .slick-slide {
+            display: block;
+            height: auto;
+            border: 1px solid transparent;
+        }
+    }
+    &-arrow {
+        &.slick-hidden {
+            display: none;
+        }
+    }
+}
+
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-loading .slick-track{
+    visibility: hidden;
+}
+
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}

@@ -1,0 +1,42 @@
+@media (min-width: 800px) {
+	// header
+	header {
+		&.page-nav {
+			&__inner {
+				a {
+					padding: 15px 15px 35px;
+				}
+
+				li {
+					display: inline-block;
+				}
+			}
+		}
+	}
+	.menu-wrapper {
+		width: auto;
+		display: block;
+		margin: 0;
+		background-color: transparent;
+	}	
+
+	.home {
+		&-hero {
+			&__phone {
+				top: 55%;
+				right: -20px;
+				position: absolute;
+			}
+		} // hero
+	}
+
+	.service {
+		&-contact {
+			&__form {
+				.service-contact__submit {
+					width: auto !important;
+				}
+			}
+		}
+	}
+}

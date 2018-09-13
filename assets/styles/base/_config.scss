@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'AvertaRegular';
+	src: url('assets/fonts/Averta-Regular.otf');
+}
+
+@font-face {
+	font-family: 'AvertaBold';
+	src: url('assets/fonts/Averta-Bold.otf');
+}
+
+@font-face {
+	font-family: 'AvertaBlack';
+	src: url('assets/fonts/Averta-Black.otf');
+}
+
+@font-face {
+	font-family: 'AvertaSemibold';
+	src: url('assets/fonts/Averta-Semibold.otf');
+}
+
+// fonts
+$font-heading: "Playfair Display";
+// colors
+$color-red: #e30040;
+$color-gray: #808080;
+$color-black: #343434;
+$color-darkviolet: #1b1b1d;
+
+// animations
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }

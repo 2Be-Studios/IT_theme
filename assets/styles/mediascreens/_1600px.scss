@@ -1,0 +1,33 @@
+@media (min-width: 1600px) {
+	.home {
+		&-hero {
+			&__phone {
+				right: -160px;
+			}
+		}
+
+		.home-testimonials {
+			margin-top: -300px;
+			padding-bottom: 6%;
+			background-position: top left;
+
+			.home-testimonials__col8wrapper {
+				padding: 65% 15% 0 19%;
+			}
+		}
+	}
+
+	.blog {
+		&-list {
+			&__item {
+				margin: 0 0 5% 0;
+			}
+		}
+	}
+
+	.related {
+		&-posts {
+			margin: 0 0 5%;
+		}
+	}
+}

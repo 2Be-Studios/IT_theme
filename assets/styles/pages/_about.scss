@@ -1,0 +1,157 @@
+.about {
+	&-page-header {
+		background-size: 102%!important;
+		background: url('assets/images/insight-about-bg.jpg') no-repeat top right;
+	}
+
+	&-team {
+		@extend .text-center;
+		overflow: hidden;
+
+		background-size: cover!important;
+		background: url('assets/images/team-bg.jpg') no-repeat top left;
+		
+		&:before {
+			background-color: rgba(27, 27, 29, 0.80);
+		}
+
+		&__slider {
+			.slick-slide {
+				@extend .text-center;
+			}
+		}
+
+		.gray-divider {
+			margin: 30px auto 30px;
+			border-color: #4f5157;
+		}
+
+
+		.container {
+			z-index: 10;
+			position: relative;
+		}
+
+		h2, h5, p {
+			color: white;
+		}
+
+		h2 {
+			margin: 5% auto 0;
+		}
+		
+		h5 {
+			margin: 5% auto 0;
+		}
+
+		p {
+			margin:0;
+		}
+		
+	}
+
+	&-partners {
+
+		&__item {
+			@extend .text-center;
+
+			height: 420px;
+
+			img {
+				width: 35%;
+			}
+
+			&.HP {
+				img {
+					width: 20%;
+				}
+
+				.img-wrapper {
+					padding: 5% 0 0;
+				}
+			}
+
+			&.Apple,
+			&.Microsoft {
+				.img-wrapper {
+					padding: 1% 0 0;	
+				}	
+			}
+
+			&.Apple {
+				img {
+					width: 15%;
+				}
+			}
+
+			&.Optus {
+				.img-wrapper {
+					padding: 7% 0 0;
+				}
+			}
+			
+		}
+
+		&__desc {
+			@extend .text-left;
+			padding: 0 15px;
+		}
+
+		.gray-divider {
+			margin: 0px auto 30px;
+		}
+
+		.img-wrapper {
+			height: 100px;
+			margin: 0 0 5% 0;
+			box-sizing: border-box;
+			padding: 14% 0 5%;
+
+		}
+
+		h2 {
+			margin: 5% auto 3%;
+		}
+
+		p {
+			color: #808080;
+			font-size: 14px;
+			line-height: 31px;
+		}
+	}
+
+	&-testimonials {
+		margin-top: -300px;
+
+		h5 {
+			margin: 0 0 0 40%;
+		}
+
+		.section-heading {
+			h2 {
+				margin: 110% 5% 0 0;
+			}
+		}
+		.testimonial-slider__nav {
+			margin: 10% 0 0 0;
+		}
+
+		.bttn-solid {
+			margin: 12% 0 0 12%;
+		}
+
+		.testi-client__details {
+			margin: 0 0 0 40%;
+
+			li {
+				position: relative;
+			}
+
+			.img-wrapper {
+				position: absolute;
+			    left: -135px;
+			    top: -10px;
+			}
+		}
+	}
+}

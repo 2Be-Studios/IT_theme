@@ -1,0 +1,324 @@
+// TYPE
+.text {
+	&-lowercase {
+		text-transform: lowercase;
+	}
+
+	&-uppercase {
+		text-transform: uppercase;
+	}
+
+	&-center {
+		text-align: center;
+	}
+
+	&-left {
+		text-align: left;
+	}
+
+	&-right {
+		text-align: right;
+	}
+	&-italic {
+		font-style: italic;
+	}
+	&-strong {
+		font-weight: 800;
+	}
+}
+// BLOCK CONFIGURATIONS
+
+.clear,
+.row {
+	&:after, &:before {
+		content:'';
+		display: table;
+		clear: both;
+	}
+}
+
+.col {
+	@extend .float-left;
+	@extend .border-box;
+}
+
+.hide-desktop { display: none; }
+
+// block centered position
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.border-box {
+	box-sizing: border-box;
+}
+
+// TRANSITIONS
+.global-transition {
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+}
+
+// DIVIDER
+.section-divider {
+	height: 5px;
+	width: 5px;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	margin: 100px auto 30px;
+	background-color: transparent;
+	border: 1px solid $color-red;
+	
+	&:before, &:after {
+		content: '';
+		width: 13px;
+		height: 1px;
+		top: 2px;
+		position: absolute;
+	}
+
+	&:before {	
+		margin: 0 0 0 -17px;
+		background-color: $color-red;
+	
+	}
+
+	&:after {	
+		margin: 0 0 0 3px;
+		background-color: $color-red;
+	}
+
+	&.gray-divider {
+		border-color: #bdbdbd;
+
+		&:before, &:after {
+			background-color: #bdbdbd;
+		}
+	}
+}
+
+// scroll down
+.scroll-down {
+	margin: 90px auto 0;
+	z-index: 10;
+	height: 50px;
+	width: 20px;
+	position: relative;
+	display: inline-block;
+	    animation: pulse 2s infinite;
+	background-size: 100%!important;
+	background: url('assets/images/scroll-down.png') no-repeat top left;
+}
+
+
+
+// BUTTON
+.bttn {
+	@extend .global-transition;
+
+	font-size: 13px;
+	color: white;
+	margin: 0 10px 0 0;
+	border-radius: 0;
+	text-transform: uppercase;
+	display: inline-block;
+	border: 1px solid #595959;
+	font-family: "AvertaBold";
+	background-color: transparent;
+
+	&:hover {
+		@extend .global-transition;
+
+		cursor: pointer;
+		border-color: white;
+
+		span {
+			border-color: white;
+		}
+	}
+
+	&-solid {
+		@extend .text-center;
+		
+		padding: 10px 35px;
+		border-color: transparent;
+		background-color: $color-red;
+	}
+
+	svg {
+		padding: 0 14px;
+
+		&.fa-info {
+			padding: 0 18px;
+		}
+	}
+
+	span {
+		padding: 15px 20px 10px;
+		display: inline-block;
+		border-left: 1px solid #595959;
+	}
+}
+
+.action-btns {
+	margin: 25px 0 0;
+}
+
+// SHAPES [EXTRA]
+.diamond-shape {
+	width: 0;
+	height: 0;
+	border: 25px solid transparent;
+	border-bottom-color: $color-red;
+	position: relative;
+	top: -25px;
+
+	&:after {
+		content: '';
+		position: absolute;
+		left: -25px;
+		top: 25px;
+		width: 0;
+		height: 0;
+		border: 25px solid transparent;
+		border-top-color: $color-red;
+	}
+}
+
+
+// POSITIONING
+.float {
+	&-left {
+		float: left;
+	}
+
+	&-right {
+		float: right;
+	}
+}
+
+// IMAGE 
+.img {
+	&-circular {
+		border-radius: 100%;
+	}
+}
+
+// BG COLORS
+.bg {
+	&-color-overlay {
+		position: relative;
+
+		&:before {
+			top: 0;
+			left: 0;
+			content: '';
+			width: 100%;
+			height: 100%;
+			z-index: 10;
+			position: absolute;
+		}
+	}
+	&-image {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+}
+
+// ninja forms 
+.form-in-red {
+
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: $color-red;
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+	  color: $color-red;
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+	  color: $color-red;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	  color: $color-red;
+	}
+
+	.nf-error {
+		font-size: 14px;
+  		line-height: 24px;
+  		font-family: "AvertaRegular";
+	}
+
+	label {
+		font-size: 18px;
+  		line-height: 32px;
+  		font-family: "AvertaRegular"; 
+	}
+
+	input {
+		&[type="text"],
+		&[type="email"],
+		&[type="tel"] {
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			padding: 10px;
+			font-size: 14px;
+			color: #00aeef;
+			border-radius: 0;
+
+			font-family: "AvertaRegular";
+			background-color: transparent;
+			border-bottom: 1px solid $color-red;
+
+			&:active, &:focus {
+				@extend .global-transition;
+
+				border-color: #00aeef;
+				outline: none;
+			}
+		}
+	}
+
+	textarea {
+		color: #00aeef;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		font-size: 14px;
+		padding: 10px;
+		font-family: "AvertaRegular";
+		background-color: transparent;
+		border-bottom: 1px solid $color-red;
+		
+		&:active, &:focus {
+			@extend .global-transition;
+
+			border-color: #00aeef;
+			outline: none;
+		}
+	}
+
+	.connect-submit {
+		position: relative;
+		font-size: 13px;
+		color: $color-red;
+		text-transform: uppercase;
+		padding: 11px 15px;
+		border: 1px solid $color-red;
+		background-color: transparent;
+	}
+	
+	.listcheckbox-wrap {
+		label {
+			font-size: 16px;
+			color: $color-red;
+		}
+		li {
+			display: flex;
+			align-items: center;
+		}
+	}
+}

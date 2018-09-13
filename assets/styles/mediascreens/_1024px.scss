@@ -1,0 +1,13 @@
+@media (min-width: 1024px) {
+	.about {
+		&-team {
+			&__slider  {
+				.slick-slide {
+					.img-wrapper {
+						height: 165px;
+					}
+				}
+			}
+		}
+	}
+}

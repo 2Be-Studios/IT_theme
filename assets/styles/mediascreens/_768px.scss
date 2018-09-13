@@ -1,0 +1,206 @@
+@media (min-width: 768px) {
+	.menu-wrapper {
+		width: 35%;
+	}
+
+	.hide-desktop {
+		display: block;
+	}
+
+	.scroll-down {
+		margin: 100px auto 0;
+	}
+
+	.global {
+		&-page-header {
+			&.default-page__layout {
+				height: 220px;
+			}
+		}
+	}
+
+	header {
+		.logo {
+			margin: 0;
+			width: 16%;
+		}
+
+		&.page-nav {
+			&__inner {
+				.page-nav {
+					&__nav {
+						.float-left.clear {
+							width: 100%;
+						}
+
+						.float-right {
+							margin: 0;
+							width: 100%;
+							background-color: transparent;
+						}
+
+						.sub-menu {
+							top: 0;
+							background-color: transparent;
+						}
+					}
+				}
+
+				a {
+					padding: 15px;
+				}
+
+				li {
+					display: block;
+				}
+			} // header.page-nav__inner
+		}
+	}
+
+	.menu-wrapper {
+		width: 38%;
+		margin: 20px 0 0;
+
+		.sub-menu {
+			top: 0;
+			left: 45px;
+			position: relative;
+			height: auto!important;
+			background-color: transparent;
+		}
+	}
+	
+	// home
+	.home {
+		&-nav {
+			.float-left.clear {
+				width: 100%;
+			}
+		}
+		&-hero {
+			height: 720px;
+			&__content {
+				.action-btns {
+					a {
+						width: auto;
+					}
+				}
+			}
+		} // home-hero 
+
+		&-testimonials {
+			&__col8wrapper {
+				padding: 10% 0% 20% 0%;
+			}
+		}
+	}
+
+	.about {
+		&-team {
+
+			&__slider {
+				.slick-slide {
+					.img-wrapper {
+						height: 130px;
+					}
+				}
+			}
+		}
+		&-page-header {
+			padding: 0 0 3%;
+			background-size: 85%!important;
+			background: url("assets/images/insight-about-bg-768.jpg") no-repeat top right;
+		}
+		&-partners {
+			padding: 2% 0;
+			&__item {
+				height: 450px;
+			}
+			.col-md-4 {
+				width: 48%;
+				float: left;
+			}
+		}
+	}
+
+	.service {
+		&-page-header {
+			padding: 5% 0;
+			background-size: 32%;
+			background-position: 100% 60%;
+			
+
+			.col-md-6 {
+				width: 100%;
+				float: left;
+				text-align: left;
+
+				&:first-child {
+					h2 {
+						padding: 0 60px;
+					}
+
+					.section-divider {
+						margin: 20px 0 15px 75px;
+					}
+				}
+
+				&:last-child {
+					.section-divider {
+						margin: 20px 0 15px 16px;
+					}
+				}
+			}
+		}
+
+		&-overview {
+			padding: 0 60px;
+		}
+
+		&-benefits {
+			padding: 3% 0;
+
+			img {
+				width: 16%;
+			}
+		}
+		&-list {
+			padding: 2% 0;
+		}
+	} // service
+
+	.blog {
+		&-list {
+			&__item {
+				//height: 500px;
+				width: 49.5%;
+				float: left;
+				margin: 0 0 8% 0;
+			}
+		}
+	} // blog
+
+	.single {
+		&-content {
+			padding: 0 5% 5%;
+		}
+		&-share {
+			padding: 1% 5% 7%;
+		}
+	}
+
+	.contact {
+		&-secondary {
+			&__form {
+				padding: 0 0 10%;
+
+				.img-wrapper {
+					&:before {
+						top: 0px;
+    						right: -56px;
+					}
+				}
+			}
+		}
+	}
+}

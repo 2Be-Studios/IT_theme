@@ -1,0 +1,42 @@
+@import 'front';
+@import 'about';
+@import 'services';
+@import 'contact';
+@import 'blog';
+
+// default page style 
+.default-page__layout {
+	
+	.contact-contact__submit {
+		position: relative;
+		font-size: 13px;
+		color: $color-red;
+		text-transform: uppercase;
+		padding: 11px 65px 11px 95px;
+		border: 1px solid $color-red;
+		background-color: transparent;
+	} // submit
+
+	.contact-csubmit__wrapper {
+		width: auto;
+		position: relative;
+		&:before {
+			top: 2px;
+		    left: 7px;
+		    color: $color-red;
+		    position: absolute;
+		    content: "\f0e0";
+		    font-family: 'Font Awesome 5 Light';
+		    font-weight: 300;
+		    border-right: 1px solid $color-red;
+		    padding: 10px 15px 10px 10px;
+		}
+
+		&:hover {
+			&:before {
+				border-right: 1px solid #595959;
+			}
+		}
+	} //submit wrapper
+	
+}

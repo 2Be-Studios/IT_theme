@@ -1,0 +1,147 @@
+.service {
+	.section-divider {
+		margin: 0px 0 15px 15px;
+	}
+
+	&-page-header {
+		background: #fcfcfc url('assets/images/service-bg.png') no-repeat 100% 10%;
+		h2 {
+			text-transform: lowercase;
+		}
+	}
+
+	&-overview {
+		padding: 0 17% 0 0;
+
+		font-family: "AvertaRegular";
+		font-size: 16px;
+		line-height: 24px;
+		color: #808080;
+
+		p, li {
+			color: #808080;
+			font-size: 16px;
+
+			strong {
+				color: #1a1a1a;
+			}
+		}
+
+		ul {
+			margin: 0 15px;
+		}
+
+		li {
+			font-family: "AvertaRegular";
+			line-height: 24px;
+		}
+
+	}
+
+	&-contact {
+		&__formheading {
+			padding: 0 0 0 8%;
+		}
+
+		&__form {
+			width: 80%;
+			padding: 0 0 0 8%;
+			.service-contact__submit {
+				position: relative;
+				font-size: 13px;
+				color: $color-red;
+				border-radius: 0;
+				text-transform: uppercase;
+				padding: 11px 52px 11px 92px;
+				border: 1px solid $color-red;
+				background-color: transparent;
+			} // submit
+
+			.service-csubmit__wrapper {
+				width: auto;
+				position: relative;
+				&:before {
+					top: 2px;
+				    left: 7px;
+				    font-size: 13px;
+				    color: $color-red;
+				    position: absolute;
+				    content: "\f0e0";
+				    font-family: 'Font Awesome 5 Light';
+				    font-weight: 300;
+				    border-right: 1px solid $color-red;
+				    padding: 10px 15px 10px 10px;
+				}
+
+				&:hover {
+					&:before {
+						border-right: 1px solid #595959;
+					}
+				}
+			} //submit wrapper
+		}
+	}
+
+	&-benefits {
+		height: auto;
+		//margin: 5% 0 0;
+		background-size: cover!important;
+		background: url('assets/images/benefit-service-bg.jpg') no-repeat top left;
+
+		h2, h6 {
+			color: white;
+		}
+
+		h6 {
+			text-transform: uppercase;
+		}
+
+		img {
+			width: 25%;
+		}
+
+		&__list {
+			padding: 3% 0 5%;
+		}
+
+		
+		.img-wrapper {
+			height: 50px;
+		}
+
+	} // benefits
+
+	&-list {
+		h2 {
+			color: #adadad;
+			margin: 7% auto 3%;
+		}
+
+		&__list {
+			margin: 3% 0 7%;
+			h6 {
+				color: #adadad;
+				text-transform: uppercase;
+			}
+
+			img {
+				width: 30%;
+			}
+
+			.col-md-2 {
+				width: 20%;
+
+				&.data-electrical-cabling{
+					img {
+						width: 20%;
+					}
+				}
+			}
+
+			.img-wrapper {
+				height: 70px;
+			}
+
+		} // service-list__list
+	} // service-list
+}
