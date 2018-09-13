@@ -2,7 +2,7 @@
 <html <?php language_attributes();?>>
 <head>
 	<meta charset="utf-8">
- 	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<?php wp_head();?>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112683242-1"></script>
@@ -12,6 +12,7 @@
   gtag('js', new Date());
   gtag('config', 'UA-112683242-1');
 </script>
+<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 </head>
 <body <?php body_class();?>>
 	<header class="home-nav__wrapper">
@@ -36,7 +37,7 @@
 		<div class="home-hero__slider_wrapper">
 			<div class="home-hero__slider">
 				<?php
-					$home_slider = theLoop( 
+					$home_slider = theLoop(
 								array(
 									'post_type'=>'heroslider',
 									'order'=>'ASC',
@@ -52,7 +53,7 @@
 				?>
 				<div>
 					<div style="background-image: url('<?php echo $bg[0];?>');" class="slider_bg"></div>
-					
+
 				</div>
 				<?php endforeach; ?>
 			</div><!-- home hero slider -->
