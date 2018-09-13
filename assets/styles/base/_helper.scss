@@ -71,7 +71,7 @@
 	margin: 100px auto 30px;
 	background-color: transparent;
 	border: 1px solid $color-red;
-	
+
 	&:before, &:after {
 		content: '';
 		width: 13px;
@@ -80,13 +80,13 @@
 		position: absolute;
 	}
 
-	&:before {	
+	&:before {
 		margin: 0 0 0 -17px;
 		background-color: $color-red;
-	
+
 	}
 
-	&:after {	
+	&:after {
 		margin: 0 0 0 3px;
 		background-color: $color-red;
 	}
@@ -108,7 +108,7 @@
 	width: 20px;
 	position: relative;
 	display: inline-block;
-	    animation: pulse 2s infinite;
+	animation: pulse 2s infinite;
 	background-size: 100%!important;
 	background: url('assets/images/scroll-down.png') no-repeat top left;
 }
@@ -142,7 +142,7 @@
 
 	&-solid {
 		@extend .text-center;
-		
+
 		padding: 10px 35px;
 		border-color: transparent;
 		background-color: $color-red;
@@ -200,7 +200,7 @@
 	}
 }
 
-// IMAGE 
+// IMAGE
 .img {
 	&-circular {
 		border-radius: 100%;
@@ -229,32 +229,33 @@
 	}
 }
 
-// ninja forms 
+// ninja forms Pscss
+
 .form-in-red {
 
 	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-	  color: $color-red;
+		color: $color-darker;
 	}
 	::-moz-placeholder { /* Firefox 19+ */
-	  color: $color-red;
+		color: $color-darker;
 	}
 	:-ms-input-placeholder { /* IE 10+ */
-	  color: $color-red;
+		color: $color-darker;
 	}
 	:-moz-placeholder { /* Firefox 18- */
-	  color: $color-red;
+		color: $color-darker;
 	}
 
 	.nf-error {
 		font-size: 14px;
-  		line-height: 24px;
-  		font-family: "AvertaRegular";
+		line-height: 24px;
+		font-family: "AvertaRegular";
 	}
 
 	label {
 		font-size: 18px;
-  		line-height: 32px;
-  		font-family: "AvertaRegular"; 
+		line-height: 32px;
+		font-family: "AvertaRegular";
 	}
 
 	input {
@@ -267,11 +268,11 @@
 			padding: 10px;
 			font-size: 14px;
 			color: #00aeef;
-			border-radius: 0;
-
 			font-family: "AvertaRegular";
-			background-color: transparent;
-			border-bottom: 1px solid $color-red;
+			border: 0;
+			border-radius: 3px;
+			background: #ececec;
+			color: #060606;
 
 			&:active, &:focus {
 				@extend .global-transition;
@@ -292,7 +293,7 @@
 		font-family: "AvertaRegular";
 		background-color: transparent;
 		border-bottom: 1px solid $color-red;
-		
+
 		&:active, &:focus {
 			@extend .global-transition;
 
@@ -310,7 +311,7 @@
 		border: 1px solid $color-red;
 		background-color: transparent;
 	}
-	
+
 	.listcheckbox-wrap {
 		label {
 			font-size: 16px;
