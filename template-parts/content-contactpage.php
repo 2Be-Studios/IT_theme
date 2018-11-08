@@ -16,7 +16,7 @@
 					?>
 					<ul class="contact-details wo-dots aos-init" data-aos="fade-down">
 						<li class="clear">
-							<i class="fas fa-map-marker-alt">&#xf3c4;</i>
+							<i class="fa fa-map-marker-alt"></i>
 							<a href="https://goo.gl/maps/4FvCsF97ft62"><?php echo the_field('insight_address', 13);?></a>
 						</li>
 						<li>
@@ -31,7 +31,7 @@
 					<ul class="contact-social__list wo-dots">
 						<li>
 							<a href="<?php echo the_field('insight_facebook', 13);?>" class="diamond-shape aos-init" target="_blank" data-aos="flip-right">
-								<i class="fab fa-facebook-f">&#xf39d;</i>
+								<i class="fab fa-facebook-f"></i>
 							</a>
 						</li>
 						<li>

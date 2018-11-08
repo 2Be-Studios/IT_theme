@@ -2,7 +2,7 @@
 <html <?php language_attributes();?>>
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
+ 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<?php wp_head();?>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112683242-1"></script>
@@ -18,7 +18,11 @@
 		<nav class="home-nav clear">
 			<div class="float-left clear">
 				<a href="<?php echo get_home_url();?>"><img src="<?php echo get_template_directory_uri();?>/assets/images/insight-logo-white.png" alt="" class="logo"></a>
-				<i class="fal fa-bar menu-toggle hide-desktop">&#xf0c9;</i>
+				
+				<button class="menu-toggle hide-desktop" onclick="menuToggle(this);">
+					<i class="fal fa-bars"></i>
+				</button>
+
 			</div>
 			<?php
 				wp_nav_menu(array(
@@ -36,7 +40,7 @@
 		<div class="home-hero__slider_wrapper">
 			<div class="home-hero__slider">
 				<?php
-					$home_slider = theLoop(
+					$home_slider = theLoop( 
 								array(
 									'post_type'=>'heroslider',
 									'order'=>'ASC',
@@ -52,7 +56,7 @@
 				?>
 				<div>
 					<div style="background-image: url('<?php echo $bg[0];?>');" class="slider_bg"></div>
-
+					
 				</div>
 				<?php endforeach; ?>
 			</div><!-- home hero slider -->

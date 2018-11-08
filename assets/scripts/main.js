@@ -1,3 +1,6 @@
+function menuToggle(el){
+	('.menu-wrapper').slideToggle();
+}
 (function($) {
 
 	AOS.init({

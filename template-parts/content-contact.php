@@ -10,18 +10,18 @@
 					<?php echo do_shortcode('[ninja_form id=1]');?>
 				</div>
 			</div><!-- col md 8-->
-			<div class="col-md-4 aos-init" data-aos="fade-left">
+			<div class="col-md-4">
 				<ul class="global-contact__details wo-dots">
 					<li class="clear">
-						<i class="fas fa-map-marker-alt">&#xf3c4;</i>
+						<i class="fa fa-map-marker-alt"></i>
 						<a href="https://goo.gl/maps/4FvCsF97ft62"><?php echo the_field('insight_address', 13);?></a>
 					</li>
 					<li>
-						<i class="fas fa-phone">&#xf095;</i>
+						<i class="fas fa-phone"></i>
 						<a href="tel:<?php echo the_field('insight_phone_number', 13);?>"><?php echo the_field('insight_phone_number', 13);?></a>
 					</li>
 					<li>
-						<i class="fas fa-envelope">&#xf0e0;</i>
+						<i class="fas fa-envelope"></i>
 						<a href="mailto:<?php echo the_field('insight_email_address', 13);?>"><?php echo the_field('insight_email_address', 13);?></a>
 					</li>
 				</ul>

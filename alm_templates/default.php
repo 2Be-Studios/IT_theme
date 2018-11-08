@@ -8,11 +8,11 @@
 		
 		<div class="item-details">
 			
-			<h2><a href="<?php the_permalink(); ?>" class="blog-list__heading"><?php echo wp_trim_words(get_the_title(),20,'..'); ?></a></h2>
+			<h2><a href="<?php the_permalink(); ?>" class="blog-list__heading"><?php echo wp_trim_words(get_the_title(),8,'..'); ?></a></h2>
 
     		<p class="item-date"><?php echo get_the_date();?></p>
 			<?php 
-				$content = wp_trim_words(get_the_content(), 20,'...'); 
+				$content = wp_trim_words(get_the_content(), 15,'...'); 
 
 				echo '<p class="item-content">' . $content . '</p>';
 			 	the_tags( '<ul class="clear blog-tags__list wo-dots"><li>', '</li><li>', '</li></ul>' ); 

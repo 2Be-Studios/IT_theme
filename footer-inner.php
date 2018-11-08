@@ -6,18 +6,19 @@
 					</div>
 					<ul class="float-right footer-social__list">
 						<li>
+
 							<a href="https://www.facebook.com/MyInsight" target="_blank">
-								<i class="fab fa-facebook-f">&#xf39d;</i>
+								<i class="fab fa-facebook-f"></i>
 							</a>
 						</li>
 						<li>
 							<a href="https://twitter.com/My_Insight" target="_blank">
-								<i class="fab fa-twitter">&#xf099;</i>
+								<i class="fab fa-twitter"></i>
 							</a>
 						</li>
 						<li>
 							<a href="https://www.linkedin.com/company/insight-i.t/" target="_blank">
-								<i class="fab fa-linkedin-in">&#xf0e1;</i>
+								<i class="fab fa-linkedin-in"></i>
 							</a>
 						</li>
 					</ul>
