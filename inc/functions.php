@@ -11,7 +11,7 @@ function insight_stylesheets(){
   // font
   // wp_enqueue_style('insight_font', 'https://fonts.googleapis.com/css?family=Playfair+Display:700');
   wp_enqueue_style('insight_font', 'https://fonts.googleapis.com/css?family=Orbitron');
-  
+
   // aos animation library css
   wp_enqueue_style( 'insight_aos', 'https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css' );
 
@@ -19,7 +19,7 @@ function insight_stylesheets(){
   wp_enqueue_script( 'insight-fontawesomsvg',INSIGHT_JS_URL .'/all.min.js' );
 
 	// insight main stylesheet
-  wp_enqueue_style( 'insight_main', INSIGHT_PARENT_URL . '/style.css', null, '2.1.7' );
+  wp_enqueue_style( 'insight_main', INSIGHT_PARENT_URL . '/style.css', null, null );
 
 }
 
