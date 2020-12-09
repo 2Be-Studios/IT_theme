@@ -326,11 +326,19 @@
 		}
 
 		&-share {
-			padding: 1% 5% 7%;
+			
+
+			&-header {
+				padding: 1% 5% 0;
+			}
+
+			&-content {
+				padding: 1% 5% 7%;
+			}
 
 			&__email {
-				margin: 0px 0 0px 14px;
-    			padding: 1.5% 0 0;
+				margin: 0px 0 0px 12px;
+    				padding: 1.5% 0 0;
 			}
 		}
 	}
@@ -390,4 +398,7 @@
 			height: auto;
 		}
 	}
+
+	
 }
+

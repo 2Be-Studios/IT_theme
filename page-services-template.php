@@ -27,8 +27,11 @@ get_header('inner');
 					<span class="section-divider gray-divider"></span>
 					<h5 class="secondary-heading">fill in your contact details and we'll be in touch shortly</h5>
 				</div>
-				
-				<div class="service-contact__form form-in-red">
+				<?php
+        	global $post;
+					$IDpost = $post->ID;
+        ?>
+				<div class="service-contact__form form-in-red" id="<?php echo $IDpost;?>">
 					<?php echo do_shortcode('[ninja_form id=3]');?>
 				</div><!-- service contact form -->
 			</div>

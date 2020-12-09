@@ -9,3 +9,7 @@
 
 // responsive 
 @import 'mediascreens/responsive';
+
+.grecaptcha-badge{
+	visibility: collapse !important;  
+}

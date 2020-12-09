@@ -5,7 +5,7 @@ body {
 	overflow-x: hidden;
 	background-color: #f7f7f7;
 
-		-ms-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 
     // font smoothing
@@ -34,13 +34,7 @@ ul {
 svg {
 	font-style: initial;
 
-	&.menu-toggle {
-		color: white;
-		float: right;
-		font-size: 24px;
-		padding: 6px 13px;
-		border: 1px solid white;
-	}
+	
 }
 
 a {
@@ -124,15 +118,41 @@ blockquote {
 
 // FORMS + INPUTS
 input {
-	&[type="text"],
-	&[type="email"],
-	&[type="tel"] {
-		
-	}
-
 	&[type="button"] {
 		@extend .global-transition;
 		
+	}
+}
+
+textarea,
+select {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	font-size: 14px;
+	padding: 10px;
+	font-size: 14px;
+	color: #00aeef;
+	font-family: "AvertaRegular";
+	background-color: #fff;
+	border-bottom: 1px solid $color-red;
+	border: 0;
+	border-radius: 3px;
+	color: #060606;
+	box-shadow: 0 0 3px 0 #dcdcdc;
+}
+
+select {
+	&:active,
+	&:focus {
+		border-color: #00aeef;
+		box-shadow: 0 0 3px 0 #b9b9b9;
+		outline: none;
+		transform: scale(1.01);
+	}
+
+	&:hover {
+		box-shadow: 0 0 3px 0 #b9b9b9;
 	}
 }
 
@@ -144,6 +164,18 @@ button {
 
 
 /** HEADER **/
+.menu-toggle {
+	color: white;
+	float: right;
+	font-size: 24px;
+	padding: 6px 13px;
+	border: 1px solid white;
+    background-color: transparent;
+
+    svg {
+	    color: white;
+    }
+}
 header {
 	&.home-hero {
 		.home-nav {
@@ -317,6 +349,10 @@ header {
 			background-color: #dce1e8;
 		}
 
+		.col-md-8 {
+			display: flex;
+		}
+
 		.contactform-wrapper {
 			width: 55%;
 			margin: 0 0 0 5%;
@@ -327,6 +363,15 @@ header {
 			padding: 11px 25px 10px 65px;
 		} // submit
 
+		.listcheckbox-wrap {
+
+			label {
+				color: #dce1e8;
+				font-family: "AvertaRegular";
+			}
+			
+		}
+
 		.global-csubmit__wrapper {
 			width: auto;
 			position: relative;
@@ -336,8 +381,8 @@ header {
 			    color: white;
 			    position: absolute;
 			    content: "\f0e0";
-			    font-family: 'Font Awesome 5 Light';
-			    font-weight: 300;
+			    font-family: 'Font Awesome 5 Pro';
+			    font-weight: 400;
 			    border-right: 1px solid #595959;
 			    padding: 10px 15px 10px 10px;
 			}
@@ -351,6 +396,9 @@ header {
 		
 		&__details {
 
+			svg {
+				color: $color-red;
+			}
 
 			i,p,a {
 				font-size: 14px;
@@ -370,6 +418,7 @@ header {
 				margin: 0 0 25px 0;
 				&:first-child {
 					svg,a {
+
 						float: left;
 					}
 

@@ -1,6 +1,0 @@
-[15-Feb-2018 04:10:02 CST6CDT] PHP Fatal error:  Call to undefined function language_attributes() in /home/insightitcomau/public_html/wp-content/themes/insight/header.php on line 2
-[15-Feb-2018 04:10:03 CST6CDT] PHP Fatal error:  Call to undefined function language_attributes() in /home/insightitcomau/public_html/wp-content/themes/insight/header.php on line 2
-[07-Apr-2018 00:07:51 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/insightitcomau/public_html/wp-content/themes/insight/archive.php on line 5
-[10-Apr-2018 14:40:28 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/insightitcomau/public_html/wp-content/themes/insight/archive.php on line 5
-[12-Apr-2018 22:31:48 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/insightitcomau/public_html/wp-content/themes/insight/archive.php on line 5
-[04-Jul-2018 20:07:39 CST6CDT] PHP Fatal error:  Call to undefined function language_attributes() in /home/insightitcomau/public_html/wp-content/themes/insight/header.php on line 2

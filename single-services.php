@@ -30,8 +30,15 @@ while ( have_posts() ) : the_post();
 					<h5 class="secondary-heading">fill in your contact details and we'll be in touch shortly</h5>
 				</div>
 				
-				<div class="service-contact__form form-in-red">
-					<?php echo do_shortcode('[ninja_form id=3]');?>
+				<div class="service-contact__form form-in-red" >
+					<?php 
+          	$IDpost = get_the_ID();
+          	if($IDpost = 597){
+          		echo do_shortcode('[ninja_form id=10]');
+            }else{
+          		echo do_shortcode('[ninja_form id=3]');
+            }
+          ?>
 				</div><!-- service contact form -->
 			</div>
 		</div><!--row -->

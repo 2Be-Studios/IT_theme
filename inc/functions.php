@@ -133,6 +133,20 @@ function reg_post_types(){
 	  )
 	);
 
+	/* Videos */
+	register_post_type( 'Videos',
+	  array(
+		'labels' => array(
+			'name' => __( 'Videos' ),
+			'singular_name' => __( 'Video' )
+		  ),
+		  'public' => true,
+		  'has_archive' => true,
+		  'menu_icon' => 'dashicons-video-alt3',
+		  'supports' => array('title', 'editor')
+	  )
+	);
+
 }
 
 add_action('init', 'reg_post_types');

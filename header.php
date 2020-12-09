@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="google-site-verification" content="BfdIhYPJAE2Ncn1R8wDHXIpQYM-LcGbhP0EFXaeJbe4" />
 	<?php wp_head();?>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112683242-1"></script>
@@ -36,8 +37,31 @@
 		</nav>
 	</header>
 	<header class="home-hero bg-color-overlay">
+		<video autoplay loop muted src="<?php echo get_template_directory_uri(); ?>/assets/video/hero-bg.mp4" 
+          type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' >
+				
+			</video>
+		<div class="home-hero__content">
+			<div class="container aos-init" data-aos="fade-right">
+				<blockquote><br/>Your not quite<br/> in house,<br/>but<p>always<br/>available</p><br/>IT DEPARTMENT</blockquote>
+				<div class="action-btns">
+					<a href="/about/" class="bttn bttn-learnmore"> <i class="fas fa-info">&#xf129;</i> <span>learn more</span></a>
+					<a href="/contact/" class="bttn bttn-contact"><i class="fal fa-envelope">&#xf0e0;</i> <span>contact us now</span></a>
+				</div>
+				<p class="home-hero__phone">
+					<a href="tel:<?php echo the_field('insight_phone_number', 13);?>">
+						<i class="fas fa-phone">&#xf095;</i>
+						<span><?php echo the_field('insight_phone_number', 13);?></span>
+					</a>
+				</p>
+			</div>
+			<span class="scroll-down"></span>
+		</div>
 		<div class="home-hero__slider_nav"></div>
+		
 		<div class="home-hero__slider_wrapper">
+			
+			
 			<div class="home-hero__slider">
 				<?php
 					$home_slider = theLoop( 
@@ -59,22 +83,7 @@
 					
 				</div>
 				<?php endforeach; ?>
-			</div><!-- home hero slider -->
+			</div> <!--home hero slider -->
 		</div><!-- slider wrapper -->
-		<div class="home-hero__content">
-			<div class="container aos-init" data-aos="fade-right">
-				<blockquote><br/>Your not quite<br/> in house,<br/>but<p>always<br/>available</p><br/>IT DEPARTMENT</blockquote>
-				<div class="action-btns">
-					<a href="/about/" class="bttn bttn-learnmore"> <i class="fas fa-info">&#xf129;</i> <span>learn more</span></a>
-					<a href="/contact/" class="bttn bttn-contact"><i class="fal fa-envelope">&#xf0e0;</i> <span>contact us now</span></a>
-				</div>
-				<p class="home-hero__phone">
-					<a href="tel:<?php echo the_field('insight_phone_number', 13);?>">
-						<i class="fas fa-phone">&#xf095;</i>
-						<span><?php echo the_field('insight_phone_number', 13);?></span>
-					</a>
-				</p>
-			</div>
-			<span class="scroll-down"></span>
-		</div>
+		
 	</header>

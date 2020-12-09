@@ -18,7 +18,9 @@
 		<nav class="page-nav__nav clear">
 			<div class="float-left clear">
 				<a href="<?php echo get_home_url();?>"><img src="<?php echo get_template_directory_uri();?>/assets/images/insight-logo-white.png" alt="" class="logo" /></a>
-				<i class="fal fa-bar menu-toggle hide-desktop">&#xf0c9;</i>
+        <button class="menu-toggle hide-desktop" onclick="menuToggle(this);">
+					<i class="fal fa-bars"></i>
+				</button>
 			</div>
 			<?php
 				wp_nav_menu(array(

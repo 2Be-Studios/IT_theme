@@ -110,8 +110,113 @@ plugins **/
 }
 
 // NINJA FORMS
+.nf-mp-header h3 {
+	font-size: 19px;
+	text-align: center;
+	font-weight: normal !important;
+}
+
+.nf-field-label {
+	font-weight: normal !important;
+}
+.nf-next {
+	padding: 11px 25px;
+	border: 1px solid #e30040;
+	color: #e30040;
+	background: transparent;
+}
+
+.nf-previous {
+	padding: 11px 25px;
+	border: 1px solid #808080;
+	color: #808080;
+	background: transparent;
+}
+
 .nf-before-form-content {
 	display: none;
+}
+
+.list {
+	&-checkbox-wrap,
+	&-radio-wrap {
+		.nf-field-element {
+			li label {
+				margin: 0!important;
+			}
+		}
+	}
+
+	&-checkbox-wrap {
+		li {
+			input[type="checkbox"] {
+				border: 0;
+				clip: rect(0 0 0 0);
+				height: 1px;
+				margin: -1px;
+				overflow: hidden;
+				padding: 0;
+				position: absolute;
+				width: 1px;
+
+				&:checked {
+					&~label {
+						color: #e30040;
+
+						&:before {
+							content: "\f046";
+						}
+					}
+				}
+			}
+
+			label {
+				&:before {
+					font-family: FontAwesome;
+					display: inline-block;
+					margin-right: 9px;
+				}
+			}
+		}
+	}
+
+	&-radio-wrap {
+		li {
+			input[type="radio"] {
+				border: 0;
+				clip: rect(0 0 0 0);
+				height: 1px;
+				margin: -1px;
+				overflow: hidden;
+				padding: 0;
+				position: absolute;
+				width: 1px;
+
+				&:focus,
+				&:checked {
+					&~label {
+						color: #e30040;
+
+						&:before {
+							content: "\f192";
+						}
+					}
+				}
+
+				&:checked {
+					&~label {
+						color: #e30040;
+					}
+				}
+			}
+
+			label {
+				&:before {
+					content: "\f1db";
+				}
+			}
+		}
+	}
 }
 
 // acf pro - google map
@@ -141,9 +246,17 @@ plugins **/
 	}
 }
 
-.nc_socialPanel:not(.nc_floater):not(.nc_socialPanelSide) {
-    width: 26%!important;
-    display: inline;
+span.swp_share {
+	display: none;
+}
+
+.swp_social_panel {
+	height: 43px!important;
+	margin-top: 0px!important;
+}
+.swp_social_panel:not(.nc_floater):not(.swp_social_panelSide) {
+    width: 14%!important;
+    display: flex;
 }
 
 // olark chat

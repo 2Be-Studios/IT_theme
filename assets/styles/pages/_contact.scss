@@ -1,6 +1,6 @@
 .contact {
 	&-details {
-		i {
+		svg {
 			color: $color-red;
 		}
 
@@ -26,11 +26,11 @@
 
 		}
 
-		i, p,a {
+		svg, p,a {
 			display: inline;
 		}
 
-		i {
+		svg {
 			margin: 0 10px 0 0;
 		}
 	}
@@ -49,7 +49,7 @@
 				display: inline-block;	
 			}
 
-			i {
+			svg {
 				position: absolute;
 			    top: 17px;
 			    z-index: 10;
@@ -87,7 +87,11 @@
 				margin: 0 0 0 10%;
 			}
 
-			
+			.nf-response-msg {
+				p {
+					color: $color-red;
+				}
+			}
 			
 			.contact-contact__submit {
 				position: relative;
@@ -103,13 +107,14 @@
 				width: auto;
 				position: relative;
 				&:before {
-					top: 2px;
+				    top: 2px;
 				    left: 7px;
 				    color: $color-red;
 				    position: absolute;
 				    content: "\f0e0";
-				    font-family: 'Font Awesome 5 Light';
-				    font-weight: 300;
+				    font-family: 'Font Awesome 5 Pro';
+  				    font-style: normal;
+  				    font-weight: 400;
 				    border-right: 1px solid $color-red;
 				    padding: 10px 15px 10px 10px;
 				}
@@ -138,4 +143,10 @@
 
 		} // form
 	} // secondary form
+}
+
+.newsletter {
+	p {
+		margin-top: -40px;
+	}
 }

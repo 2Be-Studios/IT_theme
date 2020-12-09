@@ -2,7 +2,7 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="float-left">
-						<p><strong>© 2018 Insight IT.</strong></p>
+            <p><strong>© 2018 Insight IT.</strong> <a href="/terms/">View Terms</a></p> 
 					</div>
 					<ul class="float-right footer-social__list">
 						<li>

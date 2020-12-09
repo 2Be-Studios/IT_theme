@@ -5,7 +5,6 @@
 		line-height: 44px;
 	}
 
-
 	.bttn  {
 		i {
 			padding: 0 13px 0 10px;
@@ -287,6 +286,16 @@
 		}
 	} // service
 
+	// vcfo
+	.vcfo {
+		&-services {
+			&__list {
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
 	.about {
 		&-page-header {
 			background-image: none;
@@ -373,6 +382,8 @@
 				margin: 15% auto 8%;
 			}
 		}
+
+	
 		&-content {
 			padding: 0 10% 5%;
 			p {
@@ -388,8 +399,12 @@
 		&-share {
 			padding: 1% 10% 15%;
 
+			&-header {
+				padding: 1% 10% 0;
+			}
+
 			&__email {
-				margin: 10px 0 0px 0px;
+				margin: 0 0 0px 6px;
 				padding: 4% 0 0;
 			}
 		}
@@ -465,5 +480,13 @@
 				}
 			}
 		}
+	}
+
+	.swp_social_panel {
+		margin-bottom: 0px!important;
+	}
+
+	.swp_social_panel:not(.nc_floater):not(.swp_social_panelSide) {
+		width: 100%!important;
 	}
 }

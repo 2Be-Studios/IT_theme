@@ -1,3 +1,8 @@
+@media (min-width:411px){
+	.swp_social_panel:not(.nc_floater):not(.swp_social_panelSide) {
+		width: 65% !important;
+	}
+}
 @media (min-width: 412px) {
 	h2 {
 		font-size: 44px;
@@ -128,4 +133,6 @@
 			}
 		}
 	}
+
+	
 }

@@ -13,16 +13,9 @@
 	// home
 	.home {
 		&-hero {
-			heigth: 870px;
+			height: 870px;
 			&__content {
 				width: 80%;
-				blockquote {
-					margin: 0;
-				}
-
-				.action-btns {
-					margin: 50px 0 0 0px;
-				}
 			}
 			&__phone {
 				right: -330px;
@@ -88,6 +81,14 @@
 		}
 	}
 
+	.single {
+		&-share {
+			&-email {
+				margin: 0px 0 0px 8px;
+			}
+		}
+	}
+
 	// plugins
 	.slick {
 		&-slide {
@@ -98,4 +99,8 @@
 		}
 	}
 
+	.swp_social_panel:not(.nc_floater):not(.swp_social_panelSide) {
+		width: 28%!important;
+		
+	}
 }
