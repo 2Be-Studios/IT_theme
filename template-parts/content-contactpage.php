@@ -2,12 +2,12 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h2>
+				<h1 class="pagetitle">
 					<?php 
 						$title = theLoop(array('pagename'=>'contact'), 'title');
 						echo $title;
 					?>	
-				</h2>
+				</h1>
 				<div class="section-divider gray-divider"></div>
 				<div class="global-page-header__desc">
 					<?php

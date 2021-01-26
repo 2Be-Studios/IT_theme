@@ -2,12 +2,12 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center aos-init" data-aos="fade-down">
-				<h2>
+				<h1 class="pagetitle">
 					<?php 
 						$title = theLoop(array('pagename'=>'about'), 'title');
 						echo $title;
 					?>	
-				</h2>
+				</h1>
 				<div class="section-divider gray-divider"></div>
 				<div class="global-page-header__desc">
 					<?php

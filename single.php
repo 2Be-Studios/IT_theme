@@ -7,7 +7,7 @@
 			<div class="col-md-8 col-md-offset-2 single-post__wrapper">
 				<div class="section-heading single-heading text-center">
 					<?php
-						the_title('<h2 class="single-title__heading">', '</h2>');
+						the_title('<h1 class="single-title__heading pagetitle">', '</h1>');
 					?>
 					<span class="section-divider gray-divider"></span>
 					<p class="single-date__heading"><?php echo get_the_date();?></p>

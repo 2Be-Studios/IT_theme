@@ -9,11 +9,11 @@ while ( have_posts() ) : the_post();
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 aos-init" data-aos="fade-right">
-				<h2>
+				<h1 class="pagetitle">
 					<?php $title = get_the_title();
 						echo $title;
 					?>
-				</h2>
+				</h1>
 				<span class="section-divider gray-divider"></span>
 				<div class="service-overview">
 					<p>

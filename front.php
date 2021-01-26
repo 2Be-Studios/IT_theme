@@ -4,6 +4,13 @@
 **/
 get_header();
 ?>
+<?php if ( is_page(26294) ): ?>
+<section class="customers">
+		<span class="section-divider aos-init aos-animate" data-aos="fade-down"></span>
+		<p><strong>Some customers we support</strong></p>
+		<?php echo do_shortcode('[gs_logo]'); ?>	
+</section>
+<?php endif; ?>
 <section class="home-service">
 	<div class="container">
 		<div class="text-center home-service__text">

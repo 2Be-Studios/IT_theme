@@ -9,7 +9,7 @@ get_header('inner');
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 section-heading text-center">
-				<h2>Resources</h2>
+				<h1 class="pagetitle">Resources</h1>
 				<span class="section-divider gray-divider"></span>
 			</div>
 		</div>

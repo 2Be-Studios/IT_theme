@@ -8,11 +8,11 @@ get_header('inner');
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 aos-init" data-aos="fade-right">
-				<h2>
+				<h1>
 					<?php $title = theLoop(array('pagename'=>'our-services'),'title');
 						echo $title;
 					?>
-				</h2>
+				</h1>
 				<span class="section-divider gray-divider"></span>
 				<div class="service-overview">
 					<p>
