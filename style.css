@@ -549,18 +549,6 @@ footer p a {
   background-color: transparent;
  }
 
- .red{
-  border: 1px solid #EA1F3C;
- }
-
- .red span {
-  border-left: 1px solid #EA1F3C !important;
-}
-
-.red span:hover {
-  border-left: 1px solid #FFF !important;
-}
-
 .bttn:hover {
  cursor: pointer;
  border-color: white;
@@ -9200,28 +9188,4 @@ span.swp_share {
    margin: 0 0 5%;
  }
 }
-
-@media (min-width: 768px) {
-.bx-controls-direction{
-  display: none !important; 
-}
-}
-
-.gs_logo_single {
-  width: auto !important;
-  padding: 0 10px;
-}
-
-.gs_logo_area{
-  padding: 0 50px;
-}
-
-.bx-clone{
-  display: none;
-}
-
-.gs_logo_area .bx-wrapper{
-  display: grid !important;
-  justify-content: center !important;
-  align-items: center !important;
-}  
+ 

@@ -95,7 +95,7 @@
 					</div>
 				<?php elseif ( is_page(26294) ): ?>	
 					<style>
-						blockquote{
+						.home-hero__content blockquote{
 							font-size: 35px !important;
 							text-transform: none !important;
 							line-height: 30px !important;
@@ -103,10 +103,10 @@
 							margin: 0 !important;
 						}
 						
-						blockquote .caps{
+						.home-hero__content blockquote .caps{
 							text-transform: uppercase;
 						}
-						blockquote h1{
+						.home-hero__content blockquote h1{
 							font-size: 65px !important;
 							text-transform: none !important;
 							line-height: 50px;
@@ -147,6 +147,44 @@
 							background: #fff;
 							text-align:center;
 							padding-bottom: 150px;
+						}
+
+
+						@media (min-width: 768px) {
+						.bx-controls-direction{
+						display: none !important; 
+						}
+						}
+
+						.gs_logo_single {
+						width: auto !important;
+						padding: 0 10px;
+						}
+
+						.gs_logo_area{
+						padding: 0 50px;
+						}
+
+						.bx-clone{
+						display: none;
+						}
+
+						.gs_logo_area .bx-wrapper{
+						display: grid !important;
+						justify-content: center !important;
+						align-items: center !important;
+						} 
+
+						.red{
+						border: 1px solid #EA1F3C;
+						}
+
+						.red span {
+						border-left: 1px solid #EA1F3C !important;
+						}
+
+						.red span:hover {
+						border-left: 1px solid #FFF !important;
 						}
 					</style>
 					<div class="col-md-12 hero">
