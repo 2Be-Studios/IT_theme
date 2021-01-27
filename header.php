@@ -139,7 +139,14 @@
 								margin-right: 25px;
 							}
 							blockquote h1{
-							line-height: 70px;
+								line-height: 80px;
+							}
+							.scroll-down 
+							{
+    							margin: 20px auto 0 !important;
+							}
+							.home-hero__content {
+								padding: 50px 0 0 !important;
 							}
 						}
 						
