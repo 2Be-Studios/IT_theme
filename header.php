@@ -139,7 +139,7 @@
 								margin-right: 25px;
 							}
 							blockquote h1{
-								line-height: 80px;
+								line-height: 70px !important;
 							}
 							.scroll-down 
 							{
@@ -153,9 +153,18 @@
 						.customers{
 							background: #fff;
 							text-align:center;
-							padding-bottom: 150px;
+							padding-bottom: 100px;
 						}
 
+						@media (min-width: 992px){
+							.home-hero__content .container{
+							padding-top: 5vw !important;
+							}
+
+							.home-hero__content{
+							height: 500px;
+							}
+						}
 
 						@media (min-width: 768px) {
 						.bx-controls-direction{

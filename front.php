@@ -6,7 +6,7 @@ get_header();
 ?>
 <?php if ( is_page(26294) ): ?>
 <section class="customers">
-		<span class="section-divider aos-init aos-animate" data-aos="fade-down"></span>
+		<span class="section-divider" style="margin: 36px auto 1px;"></span>
 		<p><strong>Some customers we support</strong></p>
 		<?php echo do_shortcode('[gs_logo]'); ?>	
 </section>
