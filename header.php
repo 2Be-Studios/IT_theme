@@ -107,7 +107,7 @@
 							text-transform: uppercase;
 						}
 						.home-hero__content blockquote h1{
-							font-size: 65px !important;
+							font-size: 70px !important;
 							text-transform: none !important;
 							line-height: 50px;
 						}
@@ -146,7 +146,7 @@
     							margin: 20px auto 0 !important;
 							}
 							.home-hero__content {
-								padding: 50px 0 0 !important;
+								padding: 40px 0 0 !important;
 							}
 						}
 						
@@ -162,7 +162,7 @@
 							}
 
 							.home-hero__content{
-							height: 500px;
+							height: 520px;
 							}
 						}
 
@@ -202,14 +202,21 @@
 						.red span:hover {
 						border-left: 1px solid #FFF !important;
 						}
+						.white{
+							color: #fff;
+						}
+						.scroll-down{
+							display: none;
+						}
 					</style>
 					<div class="col-md-12 hero">
 							<blockquote><br/><span class="caps">Australia’s Leading IT</span><h1>Experts in Real Estate</h1>Trusted experienced & available for over 20 years</blockquote>
 							<div class="action-btns">
-								<a href="#" class="bttn"> <i class="fal fa-comments-alt"></i> <span>Live chat</span></a>
+								<a href="javascript:void(Tawk_API.toggle())" class="bttn"> <i class="fal fa-comments-alt"></i> <span>Live chat</span></a>
 								<a href="tel:<?php echo the_field('insight_phone_number', 13);?>" class="bttn red" style="margin-bottom:10px;"><i class="fal fa-phone-volume"></i> <span>Call us</span></a>
 								<a href="mailto:<?php echo the_field('insight_email_address', 13);?>" class="bttn"><i class="fal fa-envelope"></i> <span>Email us</span></a>
-							</div>							
+							</div>	
+							<p class="white"><strong>1300 911 000</strong></p>						
 						</div>
 				<?php else: ?>
 						<div class="col-md-12">
